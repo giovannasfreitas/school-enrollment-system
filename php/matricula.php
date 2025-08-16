@@ -51,15 +51,15 @@ $result_endereco = mysqli_query ($conexao, "INSERT INTO endereco (id_aluno,cep,r
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/stylematricula.css" />
+    <link rel="stylesheet" href="../css/stylematricula.css" />
     <title>Matrícula</title>
   </head>
   <body>
     <header>
       <div class="topo">
         <div class="botao-voltar">
-          <button onclick="window.location.href=('inicio.html')">
-            <img src="assets/Arrow 1.svg" alt="" /> Voltar
+          <button onclick="window.location.href=('../pages/inicio.html')">
+            <img src="../assets/images/Arrow 1.svg" alt="" /> Voltar
           </button>
         </div>
         <div class="textos">
@@ -72,7 +72,7 @@ $result_endereco = mysqli_query ($conexao, "INSERT INTO endereco (id_aluno,cep,r
       <section class="form">
         <div class="area">
           <div class="area-topo">
-            <div class="logo-topo"><img src="assets/Logo.svg" alt="" /></div>
+            <div class="logo-topo"><img src="../assets/images/Logo.svg" alt="" /></div>
             <div class="texto-des">
               <p>
                 Preencha o formulário abaixo para garantir a matrícula do seu
@@ -189,7 +189,7 @@ $result_endereco = mysqli_query ($conexao, "INSERT INTO endereco (id_aluno,cep,r
               >
             </div>
             <div class="fim-botao">
-              <button type="submit" name="submit" onclick="window.location.href=('pos-matricula.html')">Enviar matrícula</button>
+              <button type="submit" name="submit" onclick="window.location.href=('../php/pos-matricula.html')">Enviar matrícula</button>
             </div>
           </div>
         </div>
