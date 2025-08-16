@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+.topo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+.botao-voltar{
+    position: absolute;
+    margin-right: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao-voltar button{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #050B78;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    user-select: none;
+}
+.botao-voltar button:hover{
+    background-color: #0911a8;
+}
+.botao-voltar button:active{
+    background-color: #0b13b8;
+   
+    transition: 0s;
+}
+.botao-voltar img{
+    padding-right: 0.5rem;
+    margin-bottom: -2px;
+}
+.textos{
+    text-align: center;
+}
+.textos h1{
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 700;
+    color: #050B78;
+}
+.textos p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+/*MAIN*/
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.area{
+    width: 90%;
+    height: 750px;
+    background-color: #050B78;
+    border-radius: 15px;
+
+}
+.area-topo{
+   text-align: center;
+   height: 140px; 
+}
+.logo-topo{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.texto-des p{
+    text-align: center;
+    padding: 0rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.form-caixas{
+     display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    flex-wrap: wrap; /* permite quebra de linha em telas menores */
+}
+.caixa{
+    background-color: #F0F4FF;
+    width: 350px;
+    height: 400px;
+    margin: 1rem;
+    border-radius: 17px;
+    border: 5px solid  #010555; 
+
+ 
+}
+.c-titulo{
+    height: 50px;
+    width: 100%;
+    background-color: #002366;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-titulo p{
+     font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fim-termos{
+font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.fim-termos label a{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.fim-botao button{
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #050B78;
+    background-color: #EDFDFF;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+     transition: background-color 0.15s ease-in-out;
+}
+.fim-botao button:hover{
+   background-color: #b7ebf1;
+    cursor: pointer;
+}
+
+.fim-botao button:active{
+    background-color: #83d5df;
+    transition: 0s;
+}
+.c-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 1rem;
+}
+.caixa-branca{
+    width: 100%;
+    height: 4rem;
+}
+.c-form label{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.c-form input, select{
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 3px 5px;
+    width: 90%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+

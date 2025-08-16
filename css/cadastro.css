@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+p{
+    font-size: 1rem;
+    color: white;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: lightblue;
+}
+
+.cadastro{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 20px;
+    height: 30rem;
+    width: 30rem;
+    background-color: #050B78;
+    border-radius: 4px;
+    
+    
+}
+.categoria{
+    display: flex;
+    flex-direction: row;
+    gap:3rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #030537;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+form{
+    display: grid;
+    width: 70%;
+    gap: 20px;
+}
+input{
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    background-color: gre;
+
+}
+button{
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #3683c6;
+    border: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+label{
+    color: white;
+    font-weight: 500;
+}
+
+li:hover{
+    outline: 1px solid white;
+}
+li:active{
+    outline: 1px solid white;
+}
+button:hover{
+    background-color: #4aaaff;
+    color: rgb(255, 255, 255);
+}
+
+
