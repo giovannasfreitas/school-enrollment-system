@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Inter", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+ 
+    
+} 
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-family: "Poppins"; 
+    color: white;
+}
+.escolha{
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+    
+}
+ul{
+    display: flex;
+    gap: 1.3rem;
+
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    transition: 0.2s;
+}
+li{
+    font-weight: 500;
+}
+a{
+    background-color: #e5fcff;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    background-color: #b7ebf1;
+}
+li:hover{
+transform: scale(1.1);
+}
+.caixa{
+    height: 30rem;
+    width: 39rem;
+    background-color: #ffffff;
+    display: grid;
+    align-content: center;
+    gap:5rem;
+    background-color: #050B78;
+    border-radius: 8px;
+}
+.voltar{
+    justify-self: center;
+    transition: 0.3s;
+}
+.voltar a {
+    background-color: black;
+    color: white;
+}
+.voltar a:hover, .voltar:hover{
+    background-color: rgb(27, 27, 27);
+    transform: scale(1.1);
+}
+
+    
+
