@@ -63,24 +63,14 @@ $result = $conexao->query($sql);
       echo "<td>".$user_data['numero']."</td>";
       echo "<td>".$user_data['bairro']."</td>";
       echo "<td>".$user_data['estado']."</td>";
+     echo "<td> 
+            <a class='btn btn-primary' href='editar_endereco.php?id_endereco=".$user_data['id_endereco']."'>Editar</a>
+
+            <a class='btn btn-danger' href='' >Apagar</a>
+           </td>";
       echo "</tr>";
     }
   ?>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <div class="botoes"></div>
-        <button type="button" class="btn btn-primary">Editar</button>
-        <button type="button" class="btn btn-danger">Apagar</button>
-        </div>
-    </td>
-    </tr>
-    
   </tbody>
 </table>
 </div>

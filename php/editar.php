@@ -20,7 +20,6 @@ if($result->num_rows > 0)
     $ano_ingresso = $user_data['ano_ingresso'];
     $cpf = $user_data['cpf'];
   }
-  print_r($nome);
 }
 else
 {
@@ -70,7 +69,7 @@ else
             <div class="caixa">
 
 
-               <form action="editar.php" method="POST">
+               <form action="saveEditar.php" method="POST">
               <div class="c-titulo"><p>Informações do Estudante</p></div>
 
               <div class="c-form">
@@ -87,37 +86,38 @@ else
                   value="<?php echo $nome ?>"
                 />
                 <label for="data-nasc">Data de Nascimento:</label>
-                <input type="date" name="data_nascimento" id="data-nasc" required/>
+                <input type="date" name="data_nascimento" id="data-nasc" value="<?php echo $data_nascimento?>" required/>
 
-                <label for="genero">Gênero:</label>
+               <label for="genero">Gênero:</label>
                 <select name="genero" id="genero" required>
-                  <option value="" disabled selected hidden>
-                    Selecione uma opção
-                  </option>
-                  <option value="feminino">Feminino</option>
-                  <option value="masculino">Masculino</option>
-                  <option value="nao-binario">Não Binário</option>
+                  <option value="" disabled <?php echo empty($genero) ? 'selected' : ''; ?>>Selecione uma opção</option>
+                  <option value="feminino" <?php echo ($genero == 'feminino') ? 'selected' : ''; ?>>Feminino</option>
+                  <option value="masculino" <?php echo ($genero == 'masculino') ? 'selected' : ''; ?>>Masculino</option>
+                  <option value="nao-binario" <?php echo ($genero == 'nao-binario') ? 'selected' : ''; ?>>Não Binário</option>
                 </select>
 
-                <label for="serie"> Série/Ano de Ingresso:</label>
+                <label for="serie">Série/Ano de Ingresso:</label>
                 <select name="ano_ingresso" id="serie" required>
-                  <option value="" disabled selected hidden>
-                    Selecione uma opção
-                  </option>
-                  <option value="6° Ano">6° Ano</option>
-                  <option value="7° Ano">7° Ano</option>
-                  <option value="8° Ano">8° Ano</option>
-                  <option value="9° Ano">9° Ano</option>
+                  <option value="" disabled <?php echo empty($ano_ingresso) ? 'selected' : ''; ?>>Selecione uma opção</option>
+                  <option value="6° Ano" <?php echo ($ano_ingresso == '6° Ano') ? 'selected' : ''; ?>>6° Ano</option>
+                  <option value="7° Ano" <?php echo ($ano_ingresso == '7° Ano') ? 'selected' : ''; ?>>7° Ano</option>
+                  <option value="8° Ano" <?php echo ($ano_ingresso == '8° Ano') ? 'selected' : ''; ?>>8° Ano</option>
+                  <option value="9° Ano" <?php echo ($ano_ingresso == '9° Ano') ? 'selected' : ''; ?>>9° Ano</option>
                 </select>
+                    
 
                 <label for="cpf">
                   CPF:</label
                 >
-                <input type="text" name="cpf" id="cpf"/>
+                <input type="text" name="cpf" id="cpf" value="<?php echo $cpf ?>" />
+
+                <input type="hidden" name="id_aluno" value="<?php echo $id ?>">
               </div>
             </div>
           </div>
           
+
+
           <div class="fim">
             <div class="fim-termos">
               <input type="checkbox" id="termos" required/>
@@ -126,7 +126,7 @@ else
               >
             </div>
             <div class="fim-botao">
-              <button type="submit" name="submit" onclick="window.location.href=('../pages/pos-matricula.html')">Enviar matrícula</button>
+              <button type="submit" name="update" onclick="window.location.href='../pages/inicio.html'">Editar matrícula</button>
             </div>
           </div>
         </div>

@@ -41,8 +41,10 @@ $estado = $_POST['estado'];
 $result_endereco = mysqli_query ($conexao, "INSERT INTO endereco (id_aluno,cep,rua,numero,bairro,estado) VALUES ('$id_aluno','$cep','$rua','$numero','$bairro','$estado')");
 
 
-}
+header('Location: ../pages/pos-matricula.html');
+exit; 
 
+}
 ?>
 
 
@@ -189,7 +191,7 @@ $result_endereco = mysqli_query ($conexao, "INSERT INTO endereco (id_aluno,cep,r
               >
             </div>
             <div class="fim-botao">
-              <button type="submit" name="submit" onclick="window.location.href=('../pages/pos-matricula.html')">Enviar matrícula</button>
+              <button type="submit" name="submit">Enviar matrícula</button>
             </div>
           </div>
         </div>

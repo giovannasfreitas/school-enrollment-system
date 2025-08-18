@@ -49,7 +49,6 @@ $result = $conexao->query($sql);
     </tr>
   </thead>
   <tbody>
-
     <?php
 
     while($user_data = mysqli_fetch_assoc($result))
@@ -62,29 +61,13 @@ $result = $conexao->query($sql);
       echo "<td>".$user_data['ano_ingresso']."</td>";
       echo "<td>".$user_data['cpf']."</td>";
       echo "<td> 
-            <a class='btn btn-primary' href='editar.php?id=$user_data[id_aluno]' >Editar</a>
-            <a class='btn btn-danger' href='' >Apagar</a>
+            <a class='btn btn-primary' href='editar.php?id_aluno=".$user_data['id_aluno']."'>Editar</a>
+
+            <a class='btn btn-danger' href='delete.php?id_aluno=".$user_data['id_aluno']."' >Apagar</a>
            </td>";
       echo "</tr>";
     }
   ?>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <div class="botoes"></div>
-        <button type="button" class="btn btn-primary">Editar</button>
-        <button type="button" class="btn btn-danger">Apagar</button>
-        </div>
-        
-    </td>
-    </tr>
-   
-   
   </tbody>
 </table>
 </div>

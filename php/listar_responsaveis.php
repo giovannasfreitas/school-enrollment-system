@@ -63,25 +63,13 @@ $result = $conexao->query($sql);
       echo "<td>".$user_data['telefone']."</td>";
       echo "<td>".$user_data['email']."</td>";
       echo "<td>".$user_data['cpf_responsavel']."</td>";
+        echo "<td> 
+            <a class='btn btn-primary' href='editar_responsavel.php?id_responsavel=".$user_data['id_responsavel']."'>Editar</a>
+            <a class='btn btn-danger' href='' >Apagar</a>
+           </td>";
       echo "</tr>";
     }
   ?>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <div class="botoes"></div>
-        <button type="button" class="btn btn-primary">Editar</button>
-        <button type="button" class="btn btn-danger">Apagar</button>
-        </div>
-    </td>
-    </tr>
-    
   </tbody>
 </table>
 </div>
