@@ -61,6 +61,10 @@ $result = $conexao->query($sql);
       echo "<td>".$user_data['genero']."</td>";
       echo "<td>".$user_data['ano_ingresso']."</td>";
       echo "<td>".$user_data['cpf']."</td>";
+      echo "<td> 
+            <a class='btn btn-primary' href='editar.php?id=$user_data[id_aluno]' >Editar</a>
+            <a class='btn btn-danger' href='' >Apagar</a>
+           </td>";
       echo "</tr>";
     }
   ?>
