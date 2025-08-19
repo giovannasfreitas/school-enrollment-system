@@ -109,9 +109,9 @@ exit;
                   <option value="" disabled selected hidden>
                     Selecione uma opção
                   </option>
-                  <option value="feminino">Feminino</option>
-                  <option value="masculino">Masculino</option>
-                  <option value="nao-binario">Não Binário</option>
+                  <option value="Feminino">Feminino</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Não-binário">Não Binário</option>
                 </select>
 
                 <label for="serie"> Série/Ano de Ingresso:</label>

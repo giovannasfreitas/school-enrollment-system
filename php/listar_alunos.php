@@ -5,7 +5,20 @@ error_reporting(E_ALL);
 
 include_once('config.php');
 
-$sql = "SELECT * FROM aluno ORDER BY id_aluno DESC";
+if (!empty($_GET['search']))
+{
+  $data = $_GET['search'];
+  $sql = "SELECT * FROM aluno WHERE id_aluno LIKE '%$data%' 
+          or nome LIKE '%$data%' 
+          or genero LIKE '%$data%' 
+          or cpf LIKE '%$data%' 
+          or ano_ingresso LIKE '%$data%' ORDER BY id_aluno DESC";
+}
+else
+{
+  $sql = "SELECT * FROM aluno ORDER BY id_aluno DESC";
+}
+
 
 $result = $conexao->query($sql);
 
@@ -33,6 +46,15 @@ $result = $conexao->query($sql);
         d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
     </svg></a>
   <h1>Listagem de Alunos</h1>
+</div>
+
+<div class="box-search" style="margin-bottom: 2rem;  display: flex; justify-content: center; gap: 0.4rem;">
+  <input class="form-control w-25" type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar" >
+  <button  onclick="searchData()" class=" btn btn-primary pesquisar"    style="background-color: #050B78; border: none; padding: 0.3rem 1rem" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+    </svg>
+</button>
 </div>
 
 <div class="tabela">
@@ -73,4 +95,19 @@ $result = $conexao->query($sql);
 </div>
 
 </body>
+<script> 
+  var search = document.getElementById('pesquisar');
+
+  // Função chamada ao clicar no botão ou apertar Enter
+  function searchData() {
+    window.location = 'listar_alunos.php?search=' + search.value;
+  }
+
+  // Ativa a busca ao pressionar Enter
+  search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      searchData();
+    }
+  });
+</script>
 </html>
