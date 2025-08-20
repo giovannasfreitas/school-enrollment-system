@@ -60,7 +60,7 @@ exit;
     <header>
       <div class="topo">
         <div class="botao-voltar">
-          <button onclick="window.location.href=('../pages/inicio.html')">
+          <button onclick="window.location.href=('../index.html')">
             <img src="../assets/images/Arrow 1.svg" alt="" /> Voltar
           </button>
         </div>
