@@ -29,10 +29,14 @@
 
 ---
 
+## 🎯 Sobre o Projeto
+
+Este projeto simula o fluxo real de uma matrícula escolar, com foco em uma arquitetura funcional usando **PHP puro** ("vanilla") e **MySQL**. A aplicação foi desenvolvida para ser uma demonstração prática e completa das operações de **CRUD** (Create, Read, Update, Delete) em um cenário do mundo real, gerenciando de forma relacional os dados de alunos, responsáveis e endereços.
+
 ## 🚀 Recursos
 
 * **Gerenciamento Completo (CRUD):** Funcionalidades para Criar, Ler, Atualizar e Excluir registros.
-* **Cadastro Relacional:** Formulário único que popula as tabelas de `Alunos`, `Responsáveis` e `Endereços`.
+* **Cadastro Relacional:** Formulário único que popula as tabelas interligadas do sistema.
 * **Busca Inteligente:** Ferramenta de pesquisa para filtrar e encontrar registros com facilidade.
 * **Interface Limpa:** Navegação simples e focada na experiência do usuário.
 
