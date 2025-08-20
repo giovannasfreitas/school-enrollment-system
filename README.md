@@ -47,20 +47,20 @@ Este projeto simula o fluxo real de uma matrícula escolar, com foco em uma arqu
 -   **Frontend:** HTML5 & CSS3
 -   **Ambiente Local:** MAMP (Apache + PHP + MySQL)
 
-## ⚙️ Quickstart - Rodando Localmente
+## ⚙️ Como Rodar Localmente
 
-1.  **Clone o repositório** para a pasta `htdocs` do seu ambiente (MAMP, XAMPP, etc):
+1.  **Pré-requisitos:** Tenha [Git](https://git-scm.com) e [MAMP](https://www.mamp.info/en/downloads/) (ou similar) instalados.
+
+2.  **Clone o repositório** na pasta `htdocs` do seu MAMP:
     ```sh
-    git clone [https://github.com/giovannasfreitas/school-enrollment-system.git](https://github.com/giovannasfreitas/school-enrollment-system.git)
-    ```
-2.  **Crie o banco de dados** via phpMyAdmin:
-    -   Crie um banco de dados com o nome `matriculas_db`.
-    -   Importe o arquivo `db/matriculas.sql`.
-3.  **Acesse** o projeto em seu navegador:
-    ```
-    http://localhost/school-enrollment-system/
+    git clone [https://github.com/seu-usuario/school-enrollment-system.git](https://github.com/seu-usuario/school-enrollment-system.git)
     ```
 
+3.  **Crie e importe o banco de dados** usando o phpMyAdmin:
+    -   Crie um banco chamado `matriculas_db`.
+    -   Importe o arquivo `db/matriculas.sql`.
+
+4.  **Acesse** `http://localhost/school-enrollment-system/` no seu navegador.
 ---
 
 <p align="center">
