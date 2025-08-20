@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="#-demonstração">Demonstração</a> •
-  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a> •
   <a href="#-recursos">Recursos</a> •
   <a href="#-tecnologias">Tecnologias</a> •
   <a href="#-quickstart---rodando-localmente">Como Rodar</a>
