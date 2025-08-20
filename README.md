@@ -98,28 +98,28 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ### 📂 Estrutura de Pastas
 
-/school-enrollment-system
-│
-├── index.php           # Página inicial
-├── matricula.php       # Página de matrícula
-├── pos-matricula.php   # Confirmação de matrícula
-├── listagens.php       # Exibição e CRUD das tabelas
-├── sobre.php           # Página institucional
-├── contato.php         # Página de contato
-│
-├── db/                 # Configuração e scripts SQL
-│   └── matriculas.sql
-│
-└── assets/             # CSS, imagens e arquivos estáticos
+/school-enrollment-system <br>
+│ <br>
+├── index.php           # Página inicial <br>
+├── matricula.php       # Página de matrícula <br>
+├── pos-matricula.php   # Confirmação de matrícula <br>
+├── listagens.php       # Exibição e CRUD das tabelas <br>
+├── sobre.php           # Página institucional <br>
+├── contato.php         # Página de contato <br>
+│ <br>
+├── db/                 # Configuração e scripts SQL <br>
+│   └── matriculas.sql <br>
+│ <br> 
+└── assets/             # CSS, imagens e arquivos estáticos <br>
 
 ---
 
 ### 👤 Autor
 
-Feito por **[Seu Nome]**. Entre em contato!
+Feito por **Giovanna Freitas**. Entre em contato!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-linkedin/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-github/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giovannfreitas/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/giovannasfreitas/)
 
 ---
 
