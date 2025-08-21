@@ -1,4 +1,4 @@
-# 🎓 School Enrollment System
+# Sistema de Matricula Escolar
 
 > Sistema de matrícula escolar com CRUD completo, desenvolvido em PHP puro e MySQL.
 
@@ -22,26 +22,18 @@
 
 ---
 
-## 🖥️ Demonstração
-
-<p align="center">
-  <img src="URL_DO_SEU_GIF_OU_IMAGEM_AQUI" alt="Demonstração do Sistema de Matrícula" width="90%"/>
-</p>
-
----
-
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto simula o fluxo real de uma matrícula escolar, com foco em uma arquitetura funcional usando **PHP puro** ("vanilla") e **MySQL**. A aplicação foi desenvolvida para ser uma demonstração prática e completa das operações de **CRUD** (Create, Read, Update, Delete) em um cenário do mundo real, gerenciando de forma relacional os dados de alunos, responsáveis e endereços.
 
-## 🚀 Recursos
+##  Recursos
 
 * **Gerenciamento Completo (CRUD):** Funcionalidades para Criar, Ler, Atualizar e Excluir registros.
 * **Cadastro Relacional:** Formulário único que popula as tabelas interligadas do sistema.
 * **Busca Inteligente:** Ferramenta de pesquisa para filtrar e encontrar registros com facilidade.
 * **Interface Limpa:** Navegação simples e focada na experiência do usuário.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 -   **Backend:** PHP
 -   **Banco de Dados:** MySQL
@@ -49,7 +41,7 @@ Este projeto simula o fluxo real de uma matrícula escolar, com foco em uma arqu
 -   **Ambiente Local:** MAMP (Apache + PHP + MySQL)
 
 
-## 📖 Descrição das Pastas e Arquivos
+##  Descrição das Pastas e Arquivos
 
 - **index.html** → Página inicial do sistema.  
 - **assets/** → Arquivos estáticos (imagens, logos, ícones).  
@@ -66,7 +58,7 @@ Este projeto simula o fluxo real de uma matrícula escolar, com foco em uma arqu
 
 ---
 
-## ⚙️ Como Rodar Localmente
+##  Como Rodar Localmente
 
 1.  **Pré-requisitos:** Tenha [Git](https://git-scm.com) e [MAMP](https://www.mamp.info/en/downloads/) (ou similar) instalados.
 
