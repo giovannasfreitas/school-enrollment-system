@@ -40,6 +40,7 @@ Projeto realizado para a conclusão do curso Desenvolvedor Back-end, no SENAI PE
 -   **Backend:** PHP
 -   **Banco de Dados:** MySQL
 -   **Frontend:** HTML5 & CSS3
+-   **Bibliotecas:** Bootstrap
 -   **Ambiente Local:** MAMP (Apache + PHP + MySQL)
 
 
