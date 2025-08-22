@@ -98,7 +98,8 @@ exit;
                   id="nome"
                   required
                   minlength="8"
-                  maxlength="50"
+                  maxlength="100"
+                  autocomplete="off"
                   title="Digite o seu nome completo"
                 />
                 <label for="data-nasc">Data de Nascimento:</label>
