@@ -49,7 +49,7 @@ $result = $conexao->query($sql);
 </div>
 
 <div class="box-search" style="margin-bottom: 2rem;  display: flex; justify-content: center; gap: 0.4rem;">
-  <input class="form-control w-25" type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar" >
+  <input class="form-control w-25" type="search" name="pesquisar" id="pesquisar" autocomplete="off" placeholder="Pesquisar" >
   <button  onclick="searchData()" class=" btn btn-primary pesquisar"    style="background-color: #050B78; border: none; padding: 0.3rem 1rem" >
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-search" viewBox="0 0 16 16">
     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>

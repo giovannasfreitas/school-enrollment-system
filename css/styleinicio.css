@@ -160,3 +160,9 @@
     width: 600px;
     margin-top: 12rem;
 }
+
+@media (max-width: 400px) {
+    .menu {
+        width: 100%;
+    }
+}

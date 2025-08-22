@@ -102,7 +102,7 @@ exit;
                   title="Digite o seu nome completo"
                 />
                 <label for="data-nasc">Data de Nascimento:</label>
-                <input type="date" name="data_nascimento" id="data-nasc" required/>
+                <input type="date" name="data_nascimento" id="data-nasc" autocomplete="off" required/>
 
                 <label for="genero">Gênero:</label>
                 <select name="genero" id="genero" required>
@@ -115,7 +115,7 @@ exit;
                 </select>
 
                 <label for="serie"> Série/Ano de Ingresso:</label>
-                <select name="ano_ingresso" id="serie" required>
+                <select name="ano_ingresso" id="serie" autocomplete="off" required>
                   <option value="" disabled selected hidden>
                     Selecione uma opção
                   </option>
@@ -128,7 +128,7 @@ exit;
                 <label for="cpf">
                   CPF:</label
                 >
-                <input type="text" name="cpf" id="cpf"/>
+                <input type="text" name="cpf" id="cpf" autocomplete="off"/>
               </div>
             </div>
 
@@ -136,24 +136,24 @@ exit;
               <div class="c-titulo"><p>Informações do Responsável</p></div>
               <div class="c-form">
                 <label for="nome"> Nome Completo:</label>
-                <input type="text" name="nome_responsavel" id="nome_responsavel" required/>
+                <input type="text" name="nome_responsavel" autocomplete="off" id="nome_responsavel" required/>
 
                 <label for="grau-parentesco">Grau de Parentesco:</label>
-                <input type="text" name="parentesco" id="grau-p" required/>
+                <input type="text" name="parentesco" id="grau-p" autocomplete="off" required/>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" required/>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" autocomplete="off" required/>
 
                 <label for="email"> Email:</label>
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="email" autocomplete="off"
                   placeholder="exemplo@gmail.com"
                 required/>
 
                 <label for="CPF"> CPF:</label>
-                <input type="text" name="cpf_responsavel"id="cpf_responsavel" required/>
+                <input type="text" name="cpf_responsavel"id="cpf_responsavel" autocomplete="off" required/>
               </div>
             </div>
 
@@ -162,23 +162,23 @@ exit;
               <div class="c-form">
                 <label for="nome"> CEP:</label>
                 <input
-                  type="number"
+                  type="text"
                   name="cep"
                   id="cep"
-                  placeholder="00000-000"
+                  placeholder="00000-000" autocomplete="off"
                  required/>
 
                 <label for="rua">Rua:</label>
-                <input type="text" name="rua" id="rua" required/>
+                <input type="text" name="rua" id="rua" autocomplete="off" required/>
 
                 <label for="numero">Número:</label>
-                <input type="text" name="numero"id="numero" required/>
+                <input type="text" name="numero"id="numero" autocomplete="off" required/>
 
                 <label for="bairro"> Bairro:</label>
-                <input type="text" name="bairro" id="bairro" required/>
+                <input type="text" name="bairro" id="bairro" autocomplete="off" required/>
 
                 <label for="estado"> Estado:</label>
-                <input type="text" name="estado" required/>
+                <input type="text" name="estado" autocomplete="off" required/>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ exit;
             <div class="fim-termos">
               <input type="checkbox" id="termos" required/>
               <label for="termos"
-                >Li e concordo com os <a href="#">termos da escola.</a></label
+                >Li e concordo com os <a href="../pages/termos_matricula.pdf">termos da escola.</a></label
               >
             </div>
             <div class="fim-botao">
