@@ -21,6 +21,5 @@ if(isset($_POST['update']))
 
     $result = $conexao->query($sqlUpdate);
  }
-header('Location: ../pages/pos-matricula.html'); 
-    exit;
+ header('Location: listar_alunos.php'); 
 ?>

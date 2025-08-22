@@ -126,7 +126,7 @@ else
               >
             </div>
             <div class="fim-botao">
-              <button type="submit" name="update" onclick="window.location.href='../pages/inicio.html'">Editar matrícula</button>
+              <button type="submit" name="update">Editar matrícula</button>
             </div>
           </div>
         </div>
